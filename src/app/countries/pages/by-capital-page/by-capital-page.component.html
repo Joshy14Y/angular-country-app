@@ -1,9 +1,7 @@
-<h2>Por Capital</h2>
+<h2>Por capital</h2>
 <hr />
-
 <div class="row">
   <div class="col">
-    <!--SearchBox-->
     <shared-search-box
       placeholder="Buscar por capital"
       (onValue)="searchByCapital($event)"
@@ -12,5 +10,7 @@
 </div>
 <hr />
 <div class="row">
-  <div class="col">tabla de resultados</div>
+  <div class="col">
+    <countries-country-table [countries]="countries" />
+  </div>
 </div>
